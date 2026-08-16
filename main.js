@@ -11,7 +11,7 @@ if (!window.location.pathname.slice(1)) {
       }
       h1.style.opacity = 0.01*opacity;
       opacity -= 4;
-    }, 20);
+    }, 0);
     setTimeout(() => {
       h2.classList.remove('hidden');
       const fadein = setInterval(() => {
@@ -19,8 +19,8 @@ if (!window.location.pathname.slice(1)) {
         h2.style.opacity = 0.01*opacity;
         opacity += 4;
       }, 20);
-    }, 1000);
-  }, 1500);
+    }, 500);
+  }, 7000);
 }
 
 // const dd_btn = document.getElementById('dropdown-btn');
@@ -36,18 +36,18 @@ if (!window.location.pathname.slice(1)) {
 //   }
 // });
 
-if (window.location.pathname.slice(1) == 'poems.html') {
-  const name = str => str.innerText.toLowerCase().replaceAll(' ', '-');
-  const lis = document.querySelectorAll('ol li');
-  const btns = document.querySelectorAll('button');
-  var active = document.getElementById('poem');
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      active.id = '';
-      btn.id = 'poem';
-      document.getElementById(name(active)).classList.add('hidden');
-      document.getElementById(name(btn)).classList.remove('hidden');
-      active = btn;
-    });
-  });
-}
+// if (window.location.pathname.slice(1) == 'poems.html') {
+//   const name = str => str.innerText.toLowerCase().replaceAll(' ', '-');
+//   const lis = document.querySelectorAll('ol li');
+//   const btns = document.querySelectorAll('button');
+//   var active = document.getElementById('poem');
+//   btns.forEach(btn => {
+//     btn.addEventListener('click', () => {
+//       active.id = '';
+//       btn.id = 'poem';
+//       document.getElementById(name(active)).classList.add('hidden');
+//       document.getElementById(name(btn)).classList.remove('hidden');
+//       active = btn;
+//     });
+//   });
+// }
