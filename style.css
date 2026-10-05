@@ -144,7 +144,7 @@ article ul {
 article.split {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 40px;
+  grid-gap: 60px;
   justify-items: center;
   align-items: center;
 }
@@ -188,6 +188,10 @@ article.poems button#poem {
   color: #999;
   pointer-events: none;
   cursor: default;
+}
+
+figure > img {
+  border-radius: 50%;
 }
 
 .hidden {
@@ -239,6 +243,7 @@ article.poems button#poem {
 
   article.split {
     max-width: 1000px;
+    grid-gap: 80px;
     padding: 60px 40px;
     grid-template-columns: repeat(5, 1fr);
   }
